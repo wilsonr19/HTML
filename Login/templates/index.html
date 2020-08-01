@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+  		<!--<meta name="description" content="Free Web tutorials">
+  		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  		<meta name="author" content="John Doe">-->
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+  		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/mystyle.css')}}">
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>To Do List</h1>
+			<input id="task" placeholder="Enter Something"><button id="add">Add Task</button>
+			<div id="todos"></div>
+		</div>
+		<script src="{{ url_for('static', filename='css/myscript.js') }}"></script>
+	</body>
+</html>

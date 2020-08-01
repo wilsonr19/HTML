@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Register!</title>
+  </head>
+  <body class="bg-nav">
+   <!--  <h1>Hello, world!</h1> -->
+   <nav class="navbar ">
+   	<a href="" class="navbar-brand text-light">Expence-app</a>
+   </nav>
+   <div class="container">
+   		<div class="row">
+   			<div class="col-md-8">
+   				<h1 class="text-light display-4 mt-100" style="font-size: 80px">St Joseph's College (Autonomous) </h1>
+   			</div>
+   			<div class="col-md-4">
+   				<div class="card">
+   				<div class="card-body">
+   					<form class="form" action="/register_validation" method="POST">
+              <label>Name</label><br>
+              <input type="text" name="name" class="form-control"><br>
+   						<label>Email</label><br>
+   						<input type="email"name="email" class="form-control"><br>
+   						<label>Password</label><br>
+   						<input type="password" name="password" class="form-control"><br><br>
+   						<input type="submit" name="" class="btn btn-primary btn-block btn-lg" value="Sign Up">
+   					</form>
+   					<p class="mt-2">Already a Member? <a href="/login">Login Here</a></p>
+   				</div>
+
+   				</div>
+   			</div>
+   		</div>
+   </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
