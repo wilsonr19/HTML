@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Design</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="nav-bar">
+			<div class="nav-logo">
+				<img src="nike.png">
+			</div>
+			<div class="nav-links" id="nav-links">
+				<i class="fa fa-close" onclick="closeMenu()"></i>
+				<ul>
+					<a href="#"><li>Home</li></a>
+					<a href="#"><li>About</li></a>
+					<a href="#"><li>Contact</li></a>
+				</ul>
+				<button type="button" class="btn">SignUp</button>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</div>
+		<div class="banner-title">
+			<h1>Robin Wilson <span>R</span></h1>
+			<button type="button" class="btn">Explore</button>
+		</div>
+		<div class="vertical-bar">
+			<div class="search-icon">
+				<i class="fa fa-th-list" aria-hidden="true"></i>
+				<i class="fa fa-search" aria-hidden="true"></i>
+			</div>
+			<div class="social-icon">
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+				<i class="fa fa-twitter" aria-hidden="true"></i>
 
+			</div>
+			</div>
+			<div class="notifications">
+				<div class="contents">
+					<small>Subscribe</small>
+					<p><a href="#">PREV</a><a href="#">NEXT</a></p>
+				</div>
+				<div class="notification-img">
+					<img src="beer.jpeg">
+				</div>
+			
+		</div>
+	</div>
+<script type="text/javascript">
+	var show=document.getElementById("nav-links");
+	function showMenu(){
+		show.style.right = "0";
+	}
+	
+	function closeMenu(){
+		show.style.right ="-200px";
+	}
+</script>
+</body>
+</html>
